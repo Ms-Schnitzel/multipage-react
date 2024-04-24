@@ -1,14 +1,20 @@
-var Navbar = function Navbar() {
-  return React.createElement(
-    "nav",
-    { className: "navbar navbar-expand-lg navbar-light bg-light" },
-    React.createElement(
-      "a",
-      { className: "navbar-brand", href: "#" },
-      "Navbar"
-    )
+const Navbar = () => {
+  return (
+    <nav className="navbar navbar-expand navbar-light bg-light">
+      <a className="navbar-brand" href="index.html">Navbar</a>
+      <div className="collapse navbar-collapse" id="navbarNav">
+        <ul className="navbar-nav">
+          <li className="nav-item">
+            <a className="nav-link" href="index.html">Home</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="press.html">Press</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   );
-};
+}
 
 var Sidebar = function Sidebar() {
   return React.createElement(
